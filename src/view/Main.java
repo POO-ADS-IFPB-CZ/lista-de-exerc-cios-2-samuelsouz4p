@@ -1,4 +1,5 @@
 package view;
+<<<<<<< HEAD
 import java.util.Scanner;
 import model.ContaCorrente;
 
@@ -34,5 +35,24 @@ public class Main {
             if(n == 4) System.out.println("Saindo...");
         }
 
+=======
+import model.Produto;
+
+public class Main {
+    public static void main(String[] args){
+
+        Produto p1 = new Produto(1,"Arroz",-6.70,99);
+        Produto p2 = new Produto(2,"Feijão",5.50,115);
+
+        p1.exibirInfo();
+        p2.exibirInfo();
+
+        //mudando o preço
+        p1.setPreco(6.70);
+        p1.exibirInfo();
+
+        //testando preço negativo
+        p1.setPreco(-6.70);
+>>>>>>> c45010a4cc3d1cb9c01fafb7e26a211265039c77
     }
 }
